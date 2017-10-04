@@ -1,0 +1,5 @@
+linha 6 = Não é permitido o uso de caracteres especiais, apenas o sublinhado;
+linha 7 = A atribuição de valores de uma variável não pode ser feito desta forma, o valor deve ficar ao lado direito do sinal de "=" e o nome da varável do lado esquerdo do sinal de atribuição;
+linha 8 = Não é possivel realizar operações do lado esquerda do sinal de atribuição, além do fato de possuir caracteres inválidos na atruibuição, como o "-" e o ".";
+linha 9 = Não é possível realizar esta forma de atribuição ou então, se o obejetivo era fazer uma comnparação o operador "==" deveria ter sido usado ao invés do "=" depois de "X = A + 2.0";
+linha 10 = Não é possível carregar o "V" ao "16.9" ou realizar uma operação de concatenação entre um float e uma string, se o objetivo era realizar uma multiplicação entre "16.9" e "V", um sinal de multiplicação (*) deveria ter sido colocado entre eles e "AX", caso for uma variável, deveria ser declarada previamnete.
