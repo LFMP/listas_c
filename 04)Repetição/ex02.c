@@ -16,7 +16,7 @@ int main(){
 	if (n == 2){
 		printf("O número %d é primo.\n", x);
 	}else{
-		printf("O núemro %d não é primo\n", x);
+		printf("O número %d não é primo\n", x);
 	}
 	return 0;
 }
