@@ -9,6 +9,9 @@ int main(){
 
 		printf("Digite o número da conta: ");
 		scanf("%d", &n_conta);
+		if (n_conta < 0){
+			break;
+		}
 		printf("Digite o saldo: ");
 		scanf("%f", &saldo);
 	

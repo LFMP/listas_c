@@ -6,10 +6,13 @@ int main(){
 	float saldo, agencia=0;
 	char cliente[50];
 
-	while((n_conta > 0 && n_conta < 10000) || n_conta != -999){
+	while(n_conta > 0 && n_conta < 10000){
 
 		printf("Digite o número da conta: ");
 		scanf("%d", &n_conta);
+		if (n_conta < 0 || n_conta == -999){
+			break;
+		}
 		printf("Digite o nome do cliente: ");
 		scanf("%s", cliente);
 		printf("Digite o saldo: ");
