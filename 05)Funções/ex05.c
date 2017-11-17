@@ -1,24 +1,14 @@
 #include <stdio.h>
 
 float mediazona(float a, float b, float c){
-	float media, maiorzao, maiorzinho;
-	maiorzao = a;
-	maiorzinho = a;
-	if (b > a){
-		maiorzao = b;
+	float media;
+	if (a<b && a<c){
+		media = (b+c)/2;
+	}else if(b<a && b<c){
+		media = (a+c)/2;
+	}else{
+		media = (a+b)/2;
 	}
-	if (c > a){
-		maiorzao = c;
-	}
-	if (b != maiorzinho && b <= maiorzao){
-		maiorzinho = b;
-	}
-	if (c >= maiorzinho && c <= maiorzao){
-		maiorzinho = c;
-	}
-
-	media = (maiorzinho + maiorzao)/2;
-
 	return media;
 }
 
