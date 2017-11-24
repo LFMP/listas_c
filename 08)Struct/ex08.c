@@ -33,11 +33,8 @@ int main(){
 	
 	char direto[20];
 	do{
-		printf("Digite nome do diretor pra buscar ou 0 para sair: ");
+		printf("Digite nome do diretor pra buscar: ");
 		scanf("%s", direto);
-		if (strlen(direto) == 0 || strcmp(direto, "") == 0){
-			break;
-		}
 		for (int j = 0; j < 2; ++j){
 			if (strcmp(direto, dir[j].nome) == 0){
 				for (int c = 0; c < dir[j].qtdf; ++c){
@@ -45,5 +42,5 @@ int main(){
 				}
 			}
 		}
-	}while(direto != NULL);
+	}while(strlen(direto) != 0 || strcmp(direto, "") != 0);
 }
