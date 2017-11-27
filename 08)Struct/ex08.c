@@ -13,7 +13,6 @@ struct dados{
 };
 
 int main(){
-	int n=0, men = 1;
 	struct dados dir[5];
 	for (int i = 0; i < 5; i++){
 		printf("Diretor %d\n", i+1);
@@ -34,7 +33,7 @@ int main(){
 	char direto[20];
 	do{
 		printf("Digite nome do diretor pra buscar: ");
-		scanf("%s", direto);
+		scanf(" %[^\n]s", direto);
 		for (int j = 0; j < 5; ++j){
 			if (strcmp(direto, dir[j].nome) == 0){
 				for (int c = 0; c < dir[j].qtdf; ++c){
@@ -42,5 +41,5 @@ int main(){
 				}
 			}
 		}
-	}while(strlen(direto) != 0 || strcmp(direto, "") != 0);
+	}while(strlen(direto) > 1);
 }
