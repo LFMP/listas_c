@@ -15,9 +15,7 @@ void bubble_sort(int vetor_1[tamanho]){
 	for (int i = 0; i < tamanho; ++i){
 		for (int j = 0; j < tamanho; ++j){
 			if (vetor_1[j]>vetor_1[j+1]){
-				aux = vetor_1[j];
-				vetor_1[j] = vetor_1[j+1];
-				vetor_1[j+1] = aux;
+				swap(&vetor_1[j], &vetor_1[j+1]);
 			}
 		}
 	}
