@@ -1,13 +1,9 @@
 #include <stdio.h>
 
-int m = 0;
 int ordem(int n){
-	if (n == m){
+	if (n > 0){
+		ordem(n-1);
 		printf("%d\n", n);
-	}else{
-		printf("%d\n", m);
-		m++;
-		return ordem(n);
 	}
 }
 
